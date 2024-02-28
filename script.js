@@ -39,7 +39,7 @@ function calc(){
         maior = array[1]
         
         //Cálculo
-        dif = 100 - ((menor * 100) / maior)
+        dif = ((menor * 100) / maior) - 100
         
         //Exibir resultado
         sec2.innerHTML += `${dif.toFixed(0)}%` 
