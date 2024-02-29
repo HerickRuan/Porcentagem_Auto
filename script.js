@@ -26,7 +26,7 @@ function calc(){
     //Código principal
     }else{
 
-        sec2.style.fontSize = "6em"
+        sec2.style.fontSize = "1em"
         sec2.style.borderWidth = "5px"
         
         //Implementar os dois valores no vetor
@@ -40,9 +40,23 @@ function calc(){
         
         //Cálculo
         dif = ((menor * 100) / maior) - 100
+        //Resultado sempre será positivo
+        difPos = Math.abs(dif)
         
-        //Exibir resultado
-        sec2.innerHTML += `${dif.toFixed(0)}%` 
+        //Exibir resultado para cada possibilidade de valor maior que o outro 
+        if(val1 > val2){
+           sec2.innerHTML += `<p>O valor 1 é maior</p>`
+            sec2.innerHTML += `<p id="nump">${difPos.toFixed(0)}%</p>` 
+            sec2.innerHTML += `<p>do que o valor 2</p>` 
+        } else if( val2 > val1){
+            sec2.innerHTML += `<p>O valor 2 é maior</p>`
+            sec2.innerHTML += `<p id="nump">${difPos.toFixed(0)}%</p>` 
+            sec2.innerHTML += `<p>do que o valor 1</p>` 
+        } else{
+            sec2.innerHTML += `<p>Os valores não são diferentes.</p>`
+        }
+
+        
     }
 }
 
