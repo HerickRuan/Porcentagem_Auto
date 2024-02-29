@@ -6,15 +6,89 @@
     <title>Pag principal</title>
 
     <style>
-       
+    html{
+        height: 100vh;
+        background-color: #030c1b;
+        color: rgb(235, 235, 235);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+    }
+
+    h1, h2, div{
+        text-align: center;
+        font-weight: normal;
+    }
+
+    main{
+        width: fit-content;
+        margin: auto;
+        max-width: 380px;
+        border: solid 4px black;
+        background-color: rgb(236, 236, 236);
+        box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.466);
+
+    }
+
+    div{
+        height: 150px;
+        width: 150px;
+        margin: 15px;
+        border: solid 4px;
+        display: inline-block;
+        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.411);
+    }
+
+    div > p{
+        text-align: center;
+        transform: translate(0px, 18px);
+    }
+
+    #div1{
+        color: black;
+        background-color: rgb(255, 126, 75);
+    }
+    #div2{
+        color: black;
+        background-color: rgb(74, 189, 255);
+    }
+    #div3{
+        color: black;
+        background-color: rgb(75, 255, 120);  
+    }
+    #div4{
+        color: black;
+        background-color: rgb(255, 61, 78);
+    }
+
+
     </style>
 </head>
 <body>
 
-    <h1><a href="DIF.html">DIF     </a></h1>
-    <h1><a href="DIF2.html">DIF2   </a></h1>
+    <h1>Cálculos Automáticos</h1>
 
+    <h2>Escolha uma Funcionalidade</h2>
 
+    <main>
+        <a href="PAG1.html">
+            <div id="div1">
+                <p>Diferença de Valores em Porcentagem</p>
+            </div>
+        </a>
+        <a href="PAG2.html">
+            <div id="div2">
+                <p>Adicionar e Subtrair Porcentagem</p>
+            </div>
+        </a>
+        <div id="div3">
+            <p>Vázio</p>
+        </div>
+        <div id="div4">
+            <p>Vázio</p>
+        </div>
+    </main>
+
+    
     
 </body>
 </html>
