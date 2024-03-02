@@ -21,10 +21,12 @@
 
     main{
         width: fit-content;
+        padding: 10px;
         margin: auto;
         max-width: 380px;
-        border: solid 4px black;
-        background-color: rgb(236, 236, 236);
+        border: solid 4px rgba(255, 255, 255, 0.767) ;
+        border-radius: 5px;
+        background-color: rgb(0, 0, 0);
         box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.466);
 
     }
@@ -33,10 +35,30 @@
         height: 150px;
         width: 150px;
         margin: 15px;
-        border: solid 4px;
+        border: solid 4px transparent;
+        border-radius: 5px;
         display: inline-block;
         box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.411);
+        color: white;
     }
+
+    div:hover{
+        border: solid 4px rgba(255, 255, 255, 0.767);
+        color: white;
+        
+
+        transform: translate(-2px, -2px);
+        transition: .1s;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    a > div > p:hover{
+        color: white;
+    }
+
 
     div > p{
         text-align: center;
@@ -60,6 +82,28 @@
         background-color: rgb(255, 61, 78);
     }
 
+    footer{
+
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        padding: 5px;
+        position: absolute;
+
+        left: 50%;
+        bottom: 0%;
+
+        transform: translate(-50%, -50%);
+        
+    }
+
+    footer > a{
+        color: white;
+        text-decoration: underline;
+    }
+
+    footer > a:hover{
+        color: rgb(33, 226, 7);
+    }
+
 
     </style>
 </head>
@@ -80,15 +124,19 @@
                 <p>Adicionar e Subtrair Porcentagem</p>
             </div>
         </a>
-        <div id="div3">
-            <p>Vázio</p>
-        </div>
-        <div id="div4">
-            <p>Vázio</p>
-        </div>
+        <a href="">
+            <div id="div3">
+                <p>Vázio</p>
+            </div>
+        </a>
+        <a href="">
+            <div id="div4">
+                <p>Vázio</p>
+            </div>
+        </a>
     </main>
 
     
-    
+    <footer>Criado por <a target="_blank" href="https://github.com/HerickRuan">Hérick Ruan</a></footer>
 </body>
 </html>
