@@ -6,6 +6,12 @@ html{
     color: rgb(235, 235, 235);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
+} 
+
+h1{
+    text-align: center;
+    font-weight: normal;
+    
 }
 
 
