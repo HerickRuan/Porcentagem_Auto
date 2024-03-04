@@ -17,15 +17,34 @@
         <p id="botaoPlana" onclick="botaoP()">Figuras Planas</p> 
         <p id="botaoEspac" onclick="botaoE()">Figuras Espaciais</p>
         <div id="imagens">
-            <img src="../figuras/circulo.png" alt="" id="img1" onclick="calc1()">
-            <img src="../figuras/quadrado.png" alt="" id="img2">
-            <img src="../figuras/triangulo.png" alt="" id="img3">
-            <img src="../figuras/pentagono.png" alt="" id="img4">
-            <img src="../figuras/trapezio.png" alt="" id="img5">
-            <img src="../figuras/hexagono.png" alt="" id="img6">
+            <img src="../figuras/circulo.png" id="img1" class="planas"  onclick="calc1()">
+            <img src="../figuras/quadrado.png" id="img2" class="planas" onclick="calc2()">
+            <img src="../figuras/triangulo.png" id="img3" class="planas" onclick="calc3()">
+            <img src="../figuras/pentagono.png" id="img4" class="planas" onclick="calc4()">
+            <img src="../figuras/trapezio.png" id="img5" class="planas" onclick="calc5()">
+            <img src="../figuras/hexagono.png" id="img6" class="planas" onclick="calc6()">
+
+            <img src="../figuras/esfera.png" id="img7" class="espaciais" onclick="calc7()">
+            <img src="../figuras/cubo.png" id="img8" class="espaciais" onclick="calc8()">
+            <img src="../figuras/piramide.png" id="img9" class="espaciais" onclick="calc9()">
+            <img src="../figuras/cone.png" id="img10" class="espaciais" onclick="calc10()">
+            <img src="../figuras/paralelepipedo.png" id="img11" class="espaciais" onclick="calc11()">
+            <img src="../figuras/cilindro.png" id="img12" class="espaciais" onclick="calc12()">
+
         </div>
     </main>
 
+    <section id="sec">
+
+        <h2 id="ih2"></h2>
+        <label for="ibase">Base: <input type="number" id="ibase"></label>
+        <label for="ialtura">Altura: <input type="number" id="ialtura"></label>
+        <label for="iladoMaior">Lado Maior: <input type="number" id="iladoMaior"></label>
+        <label for="iladoMenor">Lado Menor: <input type="number" id="iladoMenor"></label>
+        <label for="ilado   ">Lados: <input type="number" id="ilado"></label>
+        
+
+    </section>
 
     <a href="../index.html">Voltar</a> 
 
